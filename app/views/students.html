@@ -1,0 +1,85 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JS Classroom | Students</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+</head>
+
+<body>
+    <div>
+        <h1>Students</h1>
+    </div>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="home">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Classrooms</li>
+      </ol>
+    </nav>
+
+    <div class="container" id="center">
+        <form>
+            <div class="form-group">
+                <input type="text" id="fd_name" class="form-control" required="required" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <input type="date" id="fd_birthday" class="form-control" required="required">
+            </div>
+
+            <div class="form-group" id="fd_gender">
+                <select class="form-control">
+                    <option>Masculine</option>
+                    <option>Feminine</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div class="btn btn-success">
+                    <input type="submit" value="Save" id="btnAdd" class="btn btn-success" />
+                </div>
+                <div class="btn btn-danger">
+                    <input type="reset" value="Clear" class="btn btn-danger" />
+                </div>
+            </div>
+
+            <div id="alert-registration" class="alert alert-success hide">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Success!</strong> New student was saved!
+            </div>
+        </form>
+
+        <p>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Birth date</th>
+              <th scope="col">Gender</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Luiz</td>
+              <td>24/05/1993</td>
+              <td>Masculine</td>
+            </tr>
+            <tr>
+              <td>Thais</td>
+              <td>10/07/1992</td>
+              <td>Feminine</td>
+            </tr>
+            <tr>
+              <td>Flávia</td>
+              <td>01/05/1988</td>
+              <td>Feminie</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+</body>
+</html>

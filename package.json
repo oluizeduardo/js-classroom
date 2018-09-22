@@ -1,0 +1,26 @@
+{
+  "name": "js-classroom",
+  "version": "1.0.0",
+  "description": "A project of CRUD to study Javascript, NodeJS and AngularJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oluizeduardo/js-classroom.git"
+  },
+  "keywords": [
+    "Javascript",
+    "NodeJS"
+  ],
+  "author": "Luiz Eduardo da Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oluizeduardo/js-classroom/issues"
+  },
+  "homepage": "https://github.com/oluizeduardo/js-classroom#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

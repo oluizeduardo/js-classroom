@@ -1,0 +1,87 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JS Classroom | Classrooms</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+</head>
+
+<body>
+    <div>
+        <h1>Classrooms</h1>
+    </div>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="home">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Classrooms</li>
+      </ol>
+    </nav>
+
+    <div class="container" id="center">
+        <form>
+            <div class="form-group">
+                <input type="text" id="fd_name" class="form-control" required="required" placeholder="Classroom name">
+            </div>
+
+            <div class="form-group" id="fd_gender">
+                <select class="form-control">
+                    <option>Artes</option>
+                    <option>Biologia</option>
+                    <option>Educação Física</option>
+                    <option>Filosofia</option>
+                    <option>Física</option>
+                    <option>Geografia</option>
+                    <option>Geometria</option>
+                    <option>História</option>
+                    <option>Literatura</option>
+                    <option>Química</option>
+                    <option>Sociologia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div class="btn btn-success">
+                    <input type="submit" value="Save" id="btnAdd" class="btn btn-success" />
+                </div>
+                <div class="btn btn-danger">
+                    <input type="reset" value="Clear" class="btn btn-danger" />
+                </div>
+            </div>
+
+            <div id="alert-registration" class="alert alert-success hide">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Success!</strong> New classroom was saved!
+            </div>
+        </form>
+
+        <p>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Classroom name</th>
+              <th scope="col">Classes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Purple Room</td>
+              <td>Geografia</td>
+            </tr>
+            <tr>
+              <td>Red Room</td>
+              <td>História</td>
+            </tr>
+            <tr>
+              <td>Green Room</td>
+              <td>Matemática</td>
+            </tr>
+          </tbody>
+      </table>
+
+    </div>
+</body>
+</html>
