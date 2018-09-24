@@ -3,7 +3,7 @@ var fs = require('fs');
 
 module.exports = function(app) {
     // When a GET is required to home address.
-    app.get("/home/",function(req, res) {
+    app.get("/*/",function(req, res) {
 
       // Sets the response code and the response type.
       res.writeHead(200, {'Content-Type':'text/html'});
