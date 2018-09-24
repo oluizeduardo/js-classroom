@@ -23,9 +23,8 @@
     }
 
     function addListener() {
-        // var btn = document.getElementById("btnAdd");
-        // btn.addEventListener('click', addStudent);
-        console.log('Clicou aqui!!');
+        var btn = document.getElementById("btnAdd");
+        btn.addEventListener('click', addStudent);
     }
 
     addListener();

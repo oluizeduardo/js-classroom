@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <title>JS Classroom | Students</title>
@@ -15,7 +16,7 @@
 
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="home">Home</a></li>
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Classrooms</li>
       </ol>
     </nav>
@@ -23,7 +24,7 @@
     <div class="container" id="center">
         <form>
             <div class="form-group">
-                <input type="number" id="fd_id" class="form-control" required="required" placeholder="Identificator number">
+                <input type="number" id="fd_id" class="form-control" required="required" placeholder="Identification number">
             </div>
 
             <div class="form-group">
@@ -85,9 +86,13 @@
           </tbody>
       </table>
     </div>
-    <!--
-    <script src="./services/studentService.js"></script>
-    <script src="./controllers/studentsController.js"></script>
-  -->
+
+    <!-- Loads JQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- Loads my personal scripts. -->
+    <script src="services/studentService.js"></script>
+    <script src="controllers/studentsController.js"></script>
+
 </body>
 </html>
