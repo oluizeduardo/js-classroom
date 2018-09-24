@@ -2,7 +2,7 @@
   "name": "js-classroom",
   "version": "1.0.0",
   "description": "A project of CRUD to study Javascript, NodeJS and AngularJS.",
-  "main": "index.js",
+  "main": "app/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/oluizeduardo/js-classroom#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "express-static": "^1.2.5"
   }
 }
