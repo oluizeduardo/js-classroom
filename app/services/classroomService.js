@@ -19,7 +19,7 @@ var classroomService = (function () {
     }
 
     // Add a new classroom.
-    function addClassrooms(classroom) {
+    function addClassroom(classroom) {
         _classrooms.push(classroom);
         window.localStorage[_localStorageKey] = JSON.stringify(_classrooms);
     }
@@ -33,7 +33,7 @@ var classroomService = (function () {
     // Public methods.
     return {
         getClassrooms: getClassrooms,
-        addClassrooms: addClassrooms,
+        addClassroom: addClassroom,
         updateClassroom: updateClassroom
     };
 
