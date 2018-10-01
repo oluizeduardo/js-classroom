@@ -21,7 +21,7 @@ var studentService = (function () {
     // Add a new student.
     function addStudent(student) {
         _students.push(student);
-        window.localStorage[_localStorageKey] = JSON.stringify(_students);
+        window.localStorage[_localStorageKey] = JSON.stringify(_students); 
     }
 
     // Update a student.

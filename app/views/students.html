@@ -22,6 +22,12 @@
     </nav>
 
     <div class="container" id="center">
+
+        <div id="alert-registration" class="alert alert-success hide">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Success!</strong> New student was saved!
+        </div>
+
         <form>
             <div class="form-group">
                 <input type="number" id="fd_id" class="form-control" required="required" placeholder="Identification number">
@@ -50,41 +56,13 @@
                     <input type="reset" value="Clear" class="btn btn-danger" />
                 </div>
             </div>
-
-            <div id="alert-registration" class="alert alert-success hide">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>Success!</strong> New student was saved!
-            </div>
         </form>
 
         <p>
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Birth date</th>
-              <th scope="col">Gender</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Luiz</td>
-              <td>24/05/1993</td>
-              <td>Masculine</td>
-            </tr>
-            <tr>
-              <td>Thais</td>
-              <td>10/07/1992</td>
-              <td>Feminine</td>
-            </tr>
-            <tr>
-              <td>Flávia</td>
-              <td>01/05/1988</td>
-              <td>Feminie</td>
-            </tr>
-          </tbody>
-      </table>
+        <!-- Table -->
+        <table id="table-students" class="table"></table>
+
     </div>
 
     <!-- Loads JQuery -->
@@ -92,7 +70,8 @@
 
     <!-- Loads my personal scripts. -->
     <script src="services/studentService.js"></script>
-    <script src="controllers/studentsController.js"></script>
+    <script src="controllers/students/studentsController.js"></script>
+    <script src="controllers/students/studentsTableController.js"></script>>
 
 </body>
 </html>
