@@ -21,6 +21,12 @@
     </nav>
 
     <div class="container" id="center">
+
+        <div id="alert-registration" class="alert alert-success hide">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Success!</strong> New classroom was saved!
+        </div>
+
         <form>
             <div class="form-group">
                 <input type="number" id="fd_id" class="form-control" required="required" placeholder="Identification number">
@@ -54,37 +60,12 @@
                     <input type="reset" value="Clear" class="btn btn-danger" />
                 </div>
             </div>
-
-            <div id="alert-registration" class="alert alert-success hide">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>Success!</strong> New classroom was saved!
-            </div>
         </form>
 
         <p>
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Classroom name</th>
-              <th scope="col">Classes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Purple Room</td>
-              <td>Geografia</td>
-            </tr>
-            <tr>
-              <td>Red Room</td>
-              <td>História</td>
-            </tr>
-            <tr>
-              <td>Green Room</td>
-              <td>Matemática</td>
-            </tr>
-          </tbody>
-      </table>
+        <!-- Table -->
+        <table id="table-classrooms" class="table"></table>
 
     </div>
 
@@ -94,6 +75,7 @@
     <!-- Loads my personal scripts. -->
     <script src="services/classroomService.js"></script>
     <script src="controllers/classroomsController.js"></script>
+    <script src="controllers/classrooms/classroomsTableController.js"></script>
 
 </body>
 </html>
