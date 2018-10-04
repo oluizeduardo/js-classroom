@@ -21,8 +21,9 @@
             "<td>" + room.ID + "</td>" +
             "<td>" + room.Name + "</td>" +
             "<td>" + room.Class + "</td>" +
-            "<td>Edit Delete</td>"+
-            "</tr>");
+            "<td><img src='imgs/edit.png' alt='Edit" + i +
+            "' class='btnEdit'/>&nbsp &nbsp<img src='imgs/delete.png' alt='Delete" + i +
+            "' class='btnDelete'/></td></tr>");
     }
 
 })();

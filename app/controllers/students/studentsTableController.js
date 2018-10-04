@@ -23,8 +23,9 @@
             "<td>" + student.Name + "</td>" +
             "<td>" + student.Birthdate + "</td>" +
             "<td>" + student.Gender + "</td>" +
-            "<td>Edit Delete</td>"+
-            "</tr>");
+            "<td><img src='imgs/edit.png' alt='Edit" + i +
+            "' class='btnEdit'/>&nbsp &nbsp<img src='imgs/delete.png' alt='Delete" + i +
+            "' class='btnDelete'/></td></tr>");
     }
 
 })();

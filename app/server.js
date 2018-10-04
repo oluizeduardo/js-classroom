@@ -8,6 +8,7 @@ require('./routes/rt_home')(_app);
 
 _app.use('/controllers', expressStatic('controllers'));
 _app.use('/services', expressStatic('services'));
+_app.use(expressStatic('resources'));
 
 _app.listen(_port, function(){
   console.log("js-classroom server is running at "+_port);
